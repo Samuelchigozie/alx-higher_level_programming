@@ -1,3 +1,3 @@
 #!/bin/bash
-# Display all HTTP methods the server of a given URL will accept.
-curl -sI "$1" | grep "Allow" | cut -d " " -f 2-
+# Rakes in a URL and displays all HTTP methods
+curl -sI "$1" | grep 'Allow' | cut -d ' ' -f2-
